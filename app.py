@@ -3,12 +3,12 @@ import json
 from ai21 import AI21Client
 from ai21.models.chat import ChatMessage, ResponseFormat
 
-# Ensure the API key is set
+
 api_key = os.getenv("AI21_API_KEY")
 if not api_key:
     raise ValueError("API Key not found. Please export it in your terminal.")
 
-# Initialize the AI21 Client
+
 client = AI21Client(api_key=api_key)
 
 def generate_blog_post(blog_topic):
